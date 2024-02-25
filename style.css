@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+html, body {
+    overflow: hidden;
+}
+body{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    background: linear-gradient(45deg, #6e5252, #3a4452);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.author #author{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: 900;
+    color: blueviolet;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+.author #author:hover {
+    font-size: 20px;
+    transform: translate(-5%, -5%);
+    color:#a624b2;
+}
+.calculator{
+    position: relative;
+    height: 860;
+    width: 370px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #26e5004d;
+    box-shadow: 0 0 30px #000;
+}
+
+
+.display {
+	min-height: 200px;
+	padding: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-align: right;
+	flex: 1 1 0%;
+    border-color: #000;
+}
+.display .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+    border-bottom: #0a0a0a;
+}
+
+.display .input {
+	width: 100%;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.display .output {
+	font-size: 3rem;
+	font-weight: 700;
+	width: 100%;
+	white-space: nowrap;
+    border-bottom: #0a0a0a;
+}
+button{
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 5px;
+    margin: 3px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+button:hover{
+    transform: scale(1.1);
+}
+/* button#equal{
+    height: 90px;
+} */
+#backspace {
+    font-size: 15px;
+    background-color: red;
+    color: #ffffff;
+}
+#clear{
+    background-color: red;
+    color: #ffffff;
+}
+#equal{
+    background-color: #70e509;
+    color: #000;
+    font-weight: 600;
+}
+
+/* light theme */
+.calculator{
+    background-color: #fff;
+}
+.calculator .display{
+    color: #0a1e23;
+}
+.calculator button.btn-number{
+    background-color: #ffd0fd;
+    color: #000;
+}
+.calculator button.btn-operator{
+    background-color: #87c4e6;
+    color: #a624b2;
+}
+
